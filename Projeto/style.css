@@ -10,7 +10,7 @@ body {
     Toda essa parte superior pode se resumir na parte seguinte (shorthand/atalho):*/
 
     /*background: color image repeat position/size */
-    background: black url(./) no-repeat top center/cover   
+    background: black url(./assets/backgroundhearts.png) no-repeat top center/cover   
 }
 
 #container {
