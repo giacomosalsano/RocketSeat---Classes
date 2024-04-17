@@ -1,3 +1,10 @@
+* {
+    /* o "*" significa "universal", significa que vai aplicar isso em todos os elementos */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     /* 
     
@@ -24,24 +31,29 @@ body * {
 #container {
 
     width: 380px;
-    height: 800px;
     /* 
     margin-right: auto;
     margin-left: auto; 
     
     Esses dois sao responsaveis por deixar a "caixa" (div) no centro e pode ser resumida na seguinta propriedade: */
-    margin: auto;
+    margin: 56px auto 0px;
     display: block;
     /* "display: block" deixa a "caixa" (div) bloqueada, usando todo o espaço da tela (horizontalmente), mesmo que o texto nao precise de todo o espaço */
     /* O display pode ser "inline" ou "block", mas depende da propriedade. "Div", por exemplo é block, enquando "img" é inline */
+    padding-top: 56px;
 
 }
 
 
 #profile {
     text-align: center;
+    padding: 24px;
 }
 #profile img {
     width: 112px;
-
+}
+#profile p {
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 8px;
 }
