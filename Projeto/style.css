@@ -13,6 +13,14 @@ body {
     background: black url(./assets/backgroundhearts.png) no-repeat top center/cover   
 }
 
+body * {
+    /* o "*" depois do "body" significa "universal", significa que vai aplicar isso em todo o corpo/body */
+        font-family: "Kanit", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: white;
+}
+
 #container {
 
     width: 380px;
