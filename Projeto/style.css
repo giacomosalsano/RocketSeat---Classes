@@ -15,15 +15,25 @@ body {
 
 #container {
 
-    width: 1290px;
-    height: 2796px;
+    width: 380px;
+    height: 800px;
     /* 
     margin-right: auto;
     margin-left: auto; 
     
     Esses dois sao responsaveis por deixar a "caixa" (div) no centro e pode ser resumida na seguinta propriedade: */
     margin: auto;
+    display: block;
+    /* "display: block" deixa a "caixa" (div) bloqueada, usando todo o espaço da tela (horizontalmente), mesmo que o texto nao precise de todo o espaço */
+    /* O display pode ser "inline" ou "block", mas depende da propriedade. "Div", por exemplo é block, enquando "img" é inline */
+
+}
 
 
+#profile {
+    text-align: center;
+}
+#profile img {
+    width: 112px;
 
 }
