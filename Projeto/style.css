@@ -30,7 +30,7 @@ body * {
 
 #container {
 
-    width: 380px;
+    width: 360px;
     /* 
     margin-right: auto;
     margin-left: auto; 
@@ -41,6 +41,7 @@ body * {
     /* "display: block" deixa a "caixa" (div) bloqueada, usando todo o espaço da tela (horizontalmente), mesmo que o texto nao precise de todo o espaço */
     /* O display pode ser "inline" ou "block", mas depende da propriedade. "Div", por exemplo é block, enquando "img" é inline */
     padding-top: 56px;
+    padding: 0 24px;
 
 }
 
@@ -84,6 +85,16 @@ ul li a {
     backdrop-filter: blur (4px);
     -webkit-backdrop-filter: blur(4px);
     /* esse webkit é para que seja compativel com algumas versoes web... para verificar, usar o site "caniuse.com" */
+    
     text-decoration: none;
+
+    transition: all 0.2s;
+}
+
+/*pseudo-selector*/
+/* aqui é quando se passa o mouse em cima e há uma interação com o botão */
+ul li a:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1.5px solid white;
 }
 
