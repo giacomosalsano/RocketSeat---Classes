@@ -1,0 +1,29 @@
+body {
+    /* 
+    
+    background-color: black;
+    background-image: url(./); -- > 
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-sixe: cover;
+    
+    Toda essa parte superior pode se resumir na parte seguinte (shorthand/atalho):*/
+
+    /*background: color image repeat position/size */
+    background: black url(./) no-repeat top center/cover   
+}
+
+#container {
+
+    width: 1290px;
+    height: 2796px;
+    /* 
+    margin-right: auto;
+    margin-left: auto; 
+    
+    Esses dois sao responsaveis por deixar a "caixa" (div) no centro e pode ser resumida na seguinta propriedade: */
+    margin: auto;
+
+
+
+}
