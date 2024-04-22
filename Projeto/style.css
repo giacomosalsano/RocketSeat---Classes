@@ -13,6 +13,7 @@
     --surface-color: rgba(255, 255, 255, 0.05);
     --surface-color-hover: rgba(255, 255, 255, 0.02);
     --highlight-color: rgba(255, 255, 255, 0.2);
+    --switch-bg-image: url(./assets/Sun.svg);
     
 }
 
@@ -23,8 +24,10 @@
     --surface-color: rgba(0, 0, 0, 0.05);
     --surface-color-hover: rgba(0, 0, 0, 0.02);
     --highlight-color: rgba(0, 0, 0, 0.1);
+    --switch-bg-image: url(./assets/MoonStars.svg);
 }
 
+/*body*/
 body {
     /* 
     
@@ -66,6 +69,8 @@ body * {
 
 }
 
+
+/*profile*/
 #profile {
     text-align: center;
     padding: 24px;
@@ -81,8 +86,17 @@ body * {
     margin-top: 8px;
 }
 
-/*links*/
+/*switch*/
+#switch button {
+    width: 32px;
+    height: 32px;
+    background: white var(--switch-bg-image) no-repeat center;
+    border: 0;
+    border-radius: 50%;
+}
 
+
+/*links*/
 ul {
     list-style: none;
     display: flex;
