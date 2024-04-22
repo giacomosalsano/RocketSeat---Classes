@@ -13,7 +13,7 @@
     --surface-color: rgba(255, 255, 255, 0.05);
     --surface-color-hover: rgba(255, 255, 255, 0.02);
     --highlight-color: rgba(255, 255, 255, 0.2);
-    --switch-bg-image: url(./assets/Sun.svg);
+    --switch-bg-image: url(./assets/MoonStars.svg);
     
 }
 
@@ -24,7 +24,7 @@
     --surface-color: rgba(0, 0, 0, 0.05);
     --surface-color-hover: rgba(0, 0, 0, 0.02);
     --highlight-color: rgba(0, 0, 0, 0.1);
-    --switch-bg-image: url(./assets/MoonStars.svg);
+    --switch-bg-image: url(./assets/Sun.svg);
 }
 
 /*body*/
@@ -87,12 +87,47 @@ body * {
 }
 
 /*switch*/
+#switch {
+    border: 1px solid red;
+    position: relative;
+    /*position: relative vai relativizar o absolute dos itens dentro dele,
+    no caso, o botao*/
+    width: 64px;
+
+    margin: 4px auto;
+}
+
 #switch button {
     width: 32px;
     height: 32px;
     background: white var(--switch-bg-image) no-repeat center;
     border: 0;
     border-radius: 50%;
+
+    position: absolute;
+    /*position: absolute é para fazer uma sobreposição dos elementos
+    e o z-index define o "andar", posicionando com o top, left, right, botton*/
+    left: 0;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.light_mode #switch button {
+    right: 0;
+    left: initial;
+}
+
+#switch span {
+    display: block;
+    width: 64px;
+    height: 24px;
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 9999px;
+
 }
 
 
