@@ -5,6 +5,18 @@
     box-sizing: border-box;
 }
 
+:root {
+    --text-color: white;
+    /*Criando uma variável no css --nome_da_variavel: "valor_recebido"*/
+    --bg-url: url(.assets/bg-mobile.jpg)
+}
+
+.light_mode {
+    --text-color: black;
+    --bg-url: url(.assets/bg-mobile-light.jpg)
+
+}
+
 body {
     /* 
     
@@ -17,7 +29,7 @@ body {
     Toda essa parte superior pode se resumir na parte seguinte (shorthand/atalho):*/
 
     /*background: color image repeat position/size */
-    background: black url(./assets/background_image_darkmode.png) no-repeat top center/cover    
+    background: var(--bg-url) no-repeat top center/cover    
 }
 
 body * {
@@ -25,7 +37,8 @@ body * {
         font-family: "Kanit", sans-serif;
         font-weight: 400;
         font-style: normal;
-        color: white;
+        color: var(--text-color);
+        /*ativando a variante do css: var(nome_da_variavel)*/
 }
 
 #container {
@@ -45,14 +58,15 @@ body * {
 
 }
 
-
 #profile {
     text-align: center;
     padding: 24px;
 }
+
 #profile img {
     width: 112px;
 }
+
 #profile p {
     font-weight: 400;
     line-height: 24px;
@@ -71,8 +85,6 @@ ul {
 
 ul li {
     text-align: center;
-   
-    
 }
 
 ul li a {
@@ -96,12 +108,10 @@ ul li a {
 /* aqui é quando se passa o mouse em cima e há uma interação com o botão */
 ul li a:hover {
     background: rgba(255, 255, 255, 0.05);
-    border: 1.5px solid white;
+    border: 1.5px solid var(--text-color);
 }
 
-
 /* social links */
-
 #social_links {
     display: flex;
     justify-content: center;
@@ -119,10 +129,12 @@ ul li a:hover {
     border-radius: 50%;
 
 }
+
 #social_links a:hover {
     background: rgba(255, 255, 255, 0.2);
 }
 
+/*footer*/
 #footer {
     padding: 48px 0;
     text-align: center;
