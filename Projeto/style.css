@@ -192,6 +192,14 @@ ul li a:hover {
 }
 
 /*footer*/
+#quote {
+    text-decoration-color: var(--text-color);
+    padding: 12px 0;
+    text-align: center;
+    font-style: italic;
+    font-size: 15px;
+}
+
 #footer {
     padding: 48px 0;
     text-align: center;
