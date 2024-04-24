@@ -216,15 +216,38 @@ ul li a:hover {
 }
 
 /* media queries */
-@media (min-width: 700px) {
-    :root {
-        --bg-url: url(./assets/bg-desktop.jpg);
-    }
 
-    .light_mode {
+
+/* For small devices such as phones */ 
+@media (max-width: 767px) { 
+    :root {
+        --bg-url: url(./assets/bg-desktop.jpg); 
+       }
+       .light_mode {
         --bg-url: url(./assets/bg-desktop-light.jpg);
-    }
-}
+       } 
+  } 
+   
+  /* For medium devices such as tablets */ 
+  @media (min-width: 768px) and (max-width: 991px) { 
+    :root {
+        --bg-url: url(./assets/bg-desktop.jpg); 
+       }
+       .light_mode {
+        --bg-url: url(./assets/bg-desktop-light.jpg);
+       } 
+  } 
+   
+  /* For larger devices such as desktops */ 
+  @media (min-width: 992px) { 
+        :root {
+         --bg-url: url(./assets/bg-desktop.jpg); 
+        }
+        .light_mode {
+         --bg-url: url(./assets/bg-desktop-light.jpg);
+        }
+    } 
+
 
 /* animations */
 
