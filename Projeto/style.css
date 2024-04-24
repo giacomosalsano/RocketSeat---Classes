@@ -62,7 +62,7 @@ body * {
     margin-left: auto; 
     
     Esses dois sao responsaveis por deixar a "caixa" (div) no centro e pode ser resumida na seguinta propriedade: */
-    margin: 28px auto 0px;
+    margin: 0px auto 0px;
     /* display: block center; */
     /* "display: block" deixa a "caixa" (div) bloqueada, usando todo o espaço da tela (horizontalmente), mesmo que o texto nao precise de todo o espaço */
     /* O display pode ser "inline" ou "block", mas depende da propriedade. "Div", por exemplo é block, enquando "img" é inline */
