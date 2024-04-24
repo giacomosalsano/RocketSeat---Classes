@@ -1,14 +1,13 @@
 <h1 align="center"> Link Tree for Social Media </h1>
 
 <p align="center">
-Projeto promovido pela Rocketseat para ensino de tecnologias WEB. <br/>
+Project developed by Rocketseat to teach WEB technologies. <br/>
 </p>
 
 <p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
+  <a href="#-tecnologias">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-licença">License</a>
 </p>
 
 <p align="center">
@@ -18,25 +17,25 @@ Projeto promovido pela Rocketseat para ensino de tecnologias WEB. <br/>
 <br>
 
 
-## 🚀 Tecnologias
+## 🚀 Technologies
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+This project was developed with the following tools:
 
 - HTML e CSS
 - JavaScript
 - Git e Github
 - Figma
 
-## 💻 Projeto
+## 💻 Project
 
-Este projeto trata-se de um agregador de links para usar como cartão de visitas online.
+This project is a link tree to use as an online "business card".
 
-- [Acesse o projeto finalizado, online](https://maykbrito.github.io/devlinks)
+- [Access the finished project online](https://maykbrito.github.io/devlinks)
 
 
-## :memo: Licença
+## :memo: License
 
-Esse projeto está sob a licença MIT.
+This project is under the MIT license.
 
 ---
 
