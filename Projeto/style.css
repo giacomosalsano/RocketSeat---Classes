@@ -66,7 +66,6 @@ body * {
     /* display: block center; */
     /* "display: block" deixa a "caixa" (div) bloqueada, usando todo o espaço da tela (horizontalmente), mesmo que o texto nao precise de todo o espaço */
     /* O display pode ser "inline" ou "block", mas depende da propriedade. "Div", por exemplo é block, enquando "img" é inline */
-    padding-top: 56px;
     padding: 0 24px;
 
 }
@@ -83,7 +82,7 @@ body * {
 }
 
 #profile p {
-    font-weight: 400;
+    font-weight: 500;
     line-height: 24px;
     margin-top: 8px;
 }
@@ -108,9 +107,9 @@ body * {
     position: absolute;
     /*position: absolute é para fazer uma sobreposição dos elementos
     e o z-index define o "andar", posicionando com o top, left, right, botton*/
+    top: 50%;
     left: 0;
     z-index: 1;
-    top: 50%;
     transform: translateY(-50%);
 
     animation: slide-back 0.3s;
@@ -148,12 +147,9 @@ ul {
     padding: 24px 0;
 }
 
-ul li {
-    text-align: center;
-}
-
 ul li a {
     display: flex;
+    align-items: center;
     justify-content: center;
     padding: 16px 24px;
     background: var(--surface-color);
@@ -165,6 +161,7 @@ ul li a {
     /* esse webkit é para que seja compativel com algumas versoes web... para verificar, usar o site "caniuse.com" */
     
     text-decoration: none;
+    font-weight: 400;
 
     transition: all 0.2s;
 }
@@ -209,15 +206,13 @@ ul li a:hover {
 }
 
 #footer {
-    padding: 48px 0;
+    padding: 24px 0;
     text-align: center;
     font-size: 11px;
-    transition: all 0.2s;
+    
 }
 
 /* media queries */
-
-
 /* For small devices such as phones */ 
 /*
 @media (max-width: 767px) { 
@@ -241,8 +236,8 @@ ul li a:hover {
   } 
 
   /* For larger devices such as desktops */
-  /* 
-  @media (min-width: 992px) { 
+   
+  @media (min-width: 700px) { 
         :root {
          --bg-url: url(./assets/bg-desktop.jpg); 
         }
@@ -250,7 +245,7 @@ ul li a:hover {
          --bg-url: url(./assets/bg-desktop-light.jpg);
         }
     } 
-    */
+   
 
 
 /* animations */
