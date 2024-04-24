@@ -8,7 +8,7 @@
 :root {
     --text-color: white;
     /*Criando uma variável no css --nome_da_variavel: "valor_recebido"*/
-    --bg-url: url(./assets/bg-desktop.jpg);
+    --bg-url: url(./assets/bg-desktop.jpg) no-repeat top center/100vh;
     --stroke-color: rgba(255, 255, 255, 0.5);
     --surface-color: rgba(255, 255, 255, 0.05);
     --surface-color-hover: rgba(255, 255, 255, 0.02);
