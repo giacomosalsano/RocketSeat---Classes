@@ -88,7 +88,6 @@ body * {
 
 /*switch*/
 #switch {
-    border: 1px solid red;
     position: relative;
     /*position: relative vai relativizar o absolute dos itens dentro dele,
     no caso, o botao*/
