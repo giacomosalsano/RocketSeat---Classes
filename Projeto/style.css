@@ -40,7 +40,8 @@ body {
     Toda essa parte superior pode se resumir na parte seguinte (shorthand/atalho):*/
 
     /*background: color image repeat position/size */
-    background: var(--bg-url) no-repeat top center/cover    
+    background: var(--bg-url) no-repeat top center/cover;
+    height: 100vh;   
 }
 
 body * {
@@ -205,5 +206,16 @@ ul li a:hover {
     text-align: center;
     font-size: 11px;
     transition: all 0.2s;
+}
+
+/* media queries */
+@media (min-width: 700px) {
+    :root {
+        --bg-url: url(./assets/bg-desktop.jpg);
+    }
+
+    .light_mode {
+        --bg-url: url(./assets/bg-desktop-light.jpg);
+    }
 }
 
