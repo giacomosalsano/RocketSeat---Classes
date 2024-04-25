@@ -40,8 +40,8 @@ body {
     Toda essa parte superior pode se resumir na parte seguinte (shorthand/atalho):*/
 
     /*background: color image repeat position/size */
-    background: var(--bg-url) no-repeat top center/cover;
-    height: 100vh;  
+    background: var(--bg-url)  no-repeat top center/cover;
+    height: 100vh;   
 }
 
 body * {
