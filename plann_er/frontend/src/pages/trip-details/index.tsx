@@ -1,6 +1,17 @@
-import { Calendar, CircleCheck, CircleDashed, ExternalLink, MapPin, Plus, Settings2, UserCog } from "lucide-react";
+import { Calendar, CircleCheck, CircleDashed, CircleUser, ExternalLink, Mail, MapPin, Plus, Settings2, UserCog } from "lucide-react";
+import { useState } from "react";
 
 export function TripDetailsPage() {
+  const [isCreateActivityModalOpen, setisCreateActivityModalOpen] = useState(false)
+
+  function openCreateActivityModal() {
+    setisCreateActivityModalOpen(true)
+  }
+
+  function closeCreateActivityModal() {
+    setisCreateActivityModalOpen(false)
+  }
+
   return (
     <div className="max-w-6xl px-6 py-10 mx-auto space-y-8">
       <div className="px-4 h-16 rounded-xl bg-zinc-900 shadow-shape flex items-center justify-between">
@@ -103,18 +114,30 @@ export function TripDetailsPage() {
             <h2 className="font-semibold text-xl">Convidados</h2>
 
             <div className="space-y-5">
-              <div className="flex items-center justify-between gap-4 ">
+              <div className="flex items-center justify-between gap-4 bg-zinc-900 rounded-lg px-5 py-2">
                 <div className="space-y-1.5">
-                  <span className="block font-medium text-zinc-100">Fulano de Tal</span>
-                  <a href="#" target="_blank" className="block text-xs text-zinc-400 truncate hover:text-zinc-200">fulanodetal@email.com.br</a>
+                  <div className="flex items-center justify-start gap-2">
+                    <CircleUser className="size-3 flex " />
+                    <span className="block font-medium text-zinc-100 ">Fulano de Tal</span>
+                  </div>
+                  <div className="flex items-center justify-start gap-2">
+                    <Mail className="size-3 flex"/>
+                    <a href="#" target="_blank" className="block text-xs text-zinc-400 truncate hover:text-zinc-200">fulanodetal@email.com.br</a>
+                  </div>
                 </div>
                 <CircleCheck className="size-5  text-lime-300  shrink-0"/>
               </div>
 
-              <div className="flex items-center justify-between gap-4 ">
+              <div className="flex items-center justify-between gap-4 bg-zinc-900 rounded-lg px-5 py-2">
                 <div className="space-y-1.5">
-                  <span className="block font-medium text-zinc-100">Ciclano Beltrano</span>
-                  <a href="#" target="_blank" className="block text-xs text-zinc-400 truncate hover:text-zinc-200">ciclanobeltrano@email.com</a>
+                  <div className="flex items-center justify-start gap-2">
+                    <CircleUser className="size-3 flex " />
+                    <span className="block font-medium text-zinc-100 ">Ciclano Beltrano</span>
+                  </div>
+                  <div className="flex items-center justify-start gap-2">
+                    <Mail className="size-3 flex"/>
+                    <a href="#" target="_blank" className="block text-xs text-zinc-400 truncate hover:text-zinc-200">ciclanobeltrano_emailmuitolongo@email.com.br</a>
+                  </div>
                 </div>
                 <CircleDashed className="size-5 text-zinc-400 shrink-0"/>
               </div>
