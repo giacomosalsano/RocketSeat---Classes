@@ -3,9 +3,7 @@ import { ArrowRight, UserRoundPlus } from "lucide-react";
 interface InviteGuestsStepProps {
   openGuestsModal: () => void;
   openConfirmTripModal: () => void;
-  emailsToInvite: string;
-
-
+  emailsToInvite: string []
 }
 
 export function InviteGuestsStep({
