@@ -3,8 +3,6 @@ import { CalendarClock, Tag, X } from "lucide-react";
 
 interface CreateActivityModalProps {
   closeCreateActivityModal: () => void;
-  currentTime: () => string;
-  currentDate: () => string;
 }
 
 export function CreateAvtivityModal({closeCreateActivityModal}: CreateActivityModalProps) {
