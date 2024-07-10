@@ -5,7 +5,6 @@ import { Button } from "../../components/button";
 interface confirmTripModalProps {
   closeConfirmTripModal: () => void;
   createTrip: (event: FormEvent<HTMLFormElement>) => void;
-
 }
 
 export function ConfirmTripModal({
