@@ -1,8 +1,9 @@
-import { MapPin, Calendar, ArrowRight, UserRoundPlus, Settings2 } from 'lucide-react'
+import { ArrowRight, UserRoundPlus } from 'lucide-react'
 import { FormEvent, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { InviteGuestsModal } from './invite-guests-modal';
 import { ConfirmTripModal } from './confirm-trip-modal';
+import { DestinationAndDateStep } from './steps/destination-and-date-step';
 
 export function CreateTripPage() {
 
@@ -84,10 +85,11 @@ function createTrip(event: FormEvent<HTMLFormElement>) {
         </div>
 
         <div className='space-y-4'>
+          <DestinationAndDateStep 
+            closeGuestsInput={closeGuestsInput}
+            isGuestsInputOpen={isGuestsInputOpen}
+            openGuestsInput={openGuestsInput} />
           
-
-
-
           {isGuestsInputOpen && (
           <div className="h-16 bg-zinc-900 px-4 rounded-xl flex items-center shadow-shape gap-3">
 
