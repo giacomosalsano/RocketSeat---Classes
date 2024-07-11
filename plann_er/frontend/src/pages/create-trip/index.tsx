@@ -5,6 +5,7 @@ import { ConfirmTripModal } from './ConfirmTripModal';
 import { DestinationAndDateStep } from './steps/DestinationAndDateStep';
 import { InviteGuestsStep } from './steps/InviteGuestsStep';
 import { DateRange } from 'react-day-picker';
+import { api } from '../../lib/axios';
 
 export function CreateTripPage() {
 
@@ -75,10 +76,26 @@ function removeEmailFromInvites(emailToRemove: string) {
   setEmailsToInvite(newEmailList)
 } 
 
-function createTrip(event: FormEvent<HTMLFormElement>) {
+async function createTrip(event: FormEvent<HTMLFormElement>) {
   event.preventDefault()
 
-  navigate('/trips/123')
+  if (!destination) {return alert("Preencha o campo do destino!")}
+  if (!eventStartAndEndDates?.from || eventStartAndEndDates?.to) {return alert("Preencha o campo das datas!")}
+  if(emailsToInvite.length === 0) {return alert("Adicione os convidados!")}
+  if (!ownerName || !ownerEmail) {return alert("Preencha os campos com seu Nome e Email corretamente!")}
+
+  const response = await api.post('/trips', {
+    destination,
+    starts_at: eventStartAndEndDates.from,
+    ends_at: eventStartAndEndDates.to,
+    emails_to_invite: emailsToInvite,
+    owner_name: ownerName,
+    owner_email: ownerEmail,
+  })
+
+  const { tripId } = response.data
+  
+  navigate(`/trips/${tripId}`)
 
 }
 
