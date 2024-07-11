@@ -78,13 +78,7 @@ function removeEmailFromInvites(emailToRemove: string) {
 
 async function createTrip(event: FormEvent<HTMLFormElement>) {
   event.preventDefault()
-
-  console.log(destination)
-  console.log(eventStartAndEndDates)
-  console.log(emailsToInvite)
-  console.log(ownerName)
-  console.log(ownerEmail)
-
+  
   if (!destination) {return alert("Preencha o campo do destino!")}
   if (!eventStartAndEndDates?.from || !eventStartAndEndDates?.to) {return alert("Preencha o campo das datas!")}
   if(emailsToInvite.length === 0) {return alert("Adicione os convidados!")}
